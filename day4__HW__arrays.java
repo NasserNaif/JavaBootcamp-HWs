@@ -216,17 +216,17 @@ public class day4__HW__arrays {
 
         // 10. Write a program that test the equality of two arrays.
 
-//        int[] firstArr = {5, 6, 7, 8, 9, 10};
-//        int[] secondArr = {5, 4, 7, 8, 9, 10};
-//        boolean isEqual = true;
-//        for (int i = 0; i < firstArr.length; i++) {
-//            if (firstArr[i] != secondArr[i]) {
-//                isEqual = false;
-//                break;
-//            }
-//        }
-//
-//        System.out.println("are the two arrays Equal ? " + isEqual);
+        int[] firstArr = {5, 6, 7, 8, 9, 10};
+        int[] secondArr = {5, 4, 7, 8, 9, 10, 0};
+        boolean isEqual = true;
+        for (int i = 0; i < firstArr.length; i++) {
+            if (firstArr[i] != secondArr[i] || firstArr.length != secondArr.length) {
+                isEqual = false;
+                break;
+            }
+        }
+
+        System.out.println("are the two arrays Equal ? " + isEqual);
 
     }
 }
